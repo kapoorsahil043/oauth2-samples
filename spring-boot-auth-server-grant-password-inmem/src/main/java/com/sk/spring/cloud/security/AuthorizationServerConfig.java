@@ -34,10 +34,4 @@ public class AuthorizationServerConfig extends AuthorizationServerConfigurerAdap
 				.authorizedGrantTypes("password", "refresh_token").scopes("read", "write");
 		;
 	}
-
-	/*@Bean
-	public TokenStore tokenStore() {
-		//return new JwtTokenStore(jwtAccessTokenConverter());
-		return new JdbcTokenStore(dataSource);
-	}*/
 }
